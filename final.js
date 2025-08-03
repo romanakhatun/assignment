@@ -42,12 +42,7 @@ if (
 /** Problem 05 - ( PH Email Generator )  */
 var student = { name: "mewo", roll: 96, department: "cse" };
 //write your code here
-var emailGenerate = student.name
-  .concat(student.roll)
-  .concat(".")
-  .concat(student.department)
-  .concat("@ph.ac.bd");
-console.log(emailGenerate);
+console.log(`${student.name}${student.roll}.${student.department}@ph.ac.bd`);
 
 /** Problem 06 :  (Current Salary )  */
 var experience = 40;
