@@ -1,21 +1,3 @@
-function totalFine(fare) {
-  if (typeof fare === "string" || fare <= 0) {
-    return "Invalid";
-  } else {
-    const fine = fare + fare * 0.2 + 30;
-    return fine;
-  }
-}
-
-function onlyCharacter(str) {
-  if (typeof str === "string") {
-    let removeSpace = str.split(" ").join("").toUpperCase();
-    return removeSpace;
-  } else {
-    return "Invalid";
-  }
-}
-
 function bestTeam(player1, player2) {
   const value1 = player1.foul + player1.cardY + player1.cardR;
   const value2 = player2.foul + player2.cardY + player2.cardR;
@@ -30,3 +12,7 @@ function bestTeam(player1, player2) {
     return "Tie";
   }
 }
+
+console.log(
+  bestTeam({ name: "Germany", foul: 10, cardY: 1, cardR: 1 }, "France")
+);
